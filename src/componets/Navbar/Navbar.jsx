@@ -1,16 +1,19 @@
-import React from 'react'
+import React, { useState }from 'react'
+import styles from "./Navbar.module.css"
+import { getImageUrl } from '../../utils'
 
 export default function Navbar() {
   return (
-    <nav>
-        <a href="/">Portfolio</a>
-        <div>
-            <ul>
+    <nav className={styles.navbar}>
+        <a href="/" className={styles.title}>Portfolio</a>
+        <div className={styles.menu}>
+            <img className={styles.menuBtn} src={getImageUrl("nav/menuIcon.png")} alt="menu-button" />
+            <ul className={styles.menuItems}>
                 <li>
                     <a href="#about">About</a>
                 </li>
                 <li>
-                    <a href="#experince">Experience</a>
+                    <a href="#experience">Experience</a>
                 </li>
                 <li>
                     <a href="#projects">Projects</a>
