@@ -3,12 +3,15 @@ import styles from "./Navbar.module.css"
 import { getImageUrl } from '../../utils'
 
 export default function Navbar() {
+  const[menuOpen, setMenuOpen]=useState(false)
+
   return (
     <nav className={styles.navbar}>
         <a href="/" className={styles.title}>Portfolio</a>
         <div className={styles.menu}>
-            <img className={styles.menuBtn} src={getImageUrl("nav/menuIcon.png")} alt="menu-button" />
-            <ul className={styles.menuItems}>
+            <img className={styles.menuBtn} src={menuOpen ? getImageUrl("nav/closeIcon.png") : getImageUrl("nav/menuIcon.png")} alt="menu-button"
+            onClick={()=> setMenuOpen(!menuOpen)}/>
+            <ul className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}>
                 <li>
                     <a href="#about">About</a>
                 </li>
