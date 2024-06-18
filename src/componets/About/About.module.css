@@ -1,0 +1,44 @@
+@import "../../vars.css";
+
+.container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 49px;
+    z-index: 1;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.subSection{
+    position: relative;
+    display: flex;
+    background-color: var(--color-bg);
+    border-radius: 15px;
+    padding: 16px 100px;
+}
+
+.title{
+    font-family: var(--text-roboto);
+    color: var(--color-text);
+}
+
+.aboutImg{
+    width: 50%;
+}
+
+.content{
+    position: relative;
+    display: flex;   
+}
+
+.skillSection{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+}
+
+.skill{
+    display: flex;
+}
