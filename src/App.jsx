@@ -1,5 +1,6 @@
 import styles from "./App.module.css";
-import { Hero } from "./componets/Hero/Hero";
+import About from "./componets/About/About";
+import  Hero  from "./componets/Hero/Hero";
 import Navbar from "./componets/Navbar/Navbar";
 
 export default function App() {
@@ -7,6 +8,7 @@ export default function App() {
     <div className={styles.App}>
         <Navbar/>
         <Hero/>
+        <About/>
 
     </div>
   )
