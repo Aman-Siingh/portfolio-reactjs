@@ -11,7 +11,7 @@ export default function Hero() {
             </p>
             <a href="mailto: amansiingh15@gmail.com" className={styles.contactBtn}>Contact Me</a>
         </div>
-        <img src={getImageUrl("hero/heroImage.png")} alt="My Profile Image"className={styles.heroImg} />
+        <img src={getImageUrl("hero/Ellipse.png")} alt="My Profile Image"className={styles.heroImg} />
         <div className={styles.topBlur}/>
         <div className={styles.bottomBlur}/>
 
