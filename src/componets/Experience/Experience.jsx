@@ -4,16 +4,20 @@ import { getImageUrl } from '../../utils';
 
 
 export default function Experience() {
-  return (
-    <section>
+  return(
+    <section id='experince'>
+      <h2>Experience</h2>
       <div>
-        <ul>
-          {skills.map(skill, id) => {
-            return <div key={id}>
-                  <img src={getImageUrl(skills.imageSrc)} alt={skills.title}/>
+        <div>
+          {skills.map((skill,id)=> {
+            return (<div key={id}>
+              <div>
+                <img src={getImageUrl(skill.imageSrc)} alt={skill.title} />
+              </div>
+              <p>{skill.title}</p>
             </div>
-          }}
-        </ul>
+          )})}
+        </div>
       </div>
     </section>
   )
