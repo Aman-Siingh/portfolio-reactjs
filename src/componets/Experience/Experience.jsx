@@ -7,7 +7,7 @@ import styles from "./Experience.module.css";
 
 export default function Experience() {
   return(
-    <section id='experince' className={styles.container}>
+    <section id='experience' className={styles.container}>
       <h2 className={styles.title}>Experience</h2>
       <div className={styles.content}>
         <div className={styles.skills}>
@@ -24,7 +24,7 @@ export default function Experience() {
           {history.map((hisotryItem,id)=>{
             return <li key={id} className={styles.historyItem}>
               <img src={getImageUrl(hisotryItem.imageSrc)} alt={`${hisotryItem.organisation}'s Logo`} />
-              <div className={styles.hisotryItemDetails}>
+              <div className={styles.historyItemDetails}>
                 <h3>{hisotryItem.role},{hisotryItem.organisation}</h3>
                 <p>{hisotryItem.startDate}--{hisotryItem.endDate}</p>
                 <ul>
